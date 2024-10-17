@@ -63,7 +63,7 @@ const products = [
 //       <img 
 //         src={currentProduct.image}  
 //         alt={currentProduct.name} 
-//         className={`w-full max-w-md bg-transparent transition-transform duration-1000 ${isAnimating ? 'animate-slide-up' : 'animate-slide-down'}`}/>
+//         className={`w-full max-w-md transition-transform duration-1000 ${isAnimating ? 'animate-slide-up' : 'animate-slide-down'}`}/>
 //       </div>
 //     </div>
 //   );
@@ -97,13 +97,13 @@ const HeroSection = () => {
     return (
       <div className="text-white flex justify-center items-center mt-8">
         {/* Left Section (Text) */}
-        <div className="w-1/2 px-8">
+        <div className="w-1/2 text-center flex flex-col items-center ml-24">
           <h1 className="text-4xl sm:text-6xl font-bold">
             Transforming ideas into
-            <span className="text-yellow-400"> autonomous</span>
+            <span>autonomous</span>
           </h1>
           <h1
-            className={`text-4xl sm:text-6xl font-bold mb-6 mt-2 transform transition-all duration-500 ${
+            className={`text-2xl sm:text-6xl font-bold mb-12 mt-4 transform transition-all duration-500 ${
               isAnimating ? 'animate-slide-out' : 'animate-slide-in'
             }`}
           >
@@ -113,17 +113,17 @@ const HeroSection = () => {
             We make <span className="text-yellow-400">software for autonomous robots.</span><br />
             Build your robots better, faster, and cheaper!
           </p>
-          <button className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition duration-300">
+          <button className="px-6 py-2 border text-white border-white rounded-full hover:bg-white hover:text-slate-700 transition duration-500">
             Get In Touch →
           </button>
         </div>
   
         {/* Right Section (Image) */}
-        <div className="w-1/2 flex justify-center relative">
+        <div className="w-1/2 mt-12">
           <img
             src={currentProduct.image}
             alt={currentProduct.name}
-            className={`absolute w-3/4 transition-transform duration-500 transform ${
+            className={`w-full max-w-md transition-transform duration-500 transform ${
               isAnimating ? 'animate-slide-down' : 'animate-slide-up'
             }`}
           />
