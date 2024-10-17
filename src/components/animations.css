@@ -1,0 +1,44 @@
+/* Animation for sliding the text/image up */
+@keyframes slideUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Animation for sliding the text/image down */
+  @keyframes slideDown {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+  
+  /* Slide-in animation for the text */
+  .animate-slide-in {
+    animation: slideUp 0.5s forwards;
+  }
+  
+  /* Slide-out animation for the text */
+  .animate-slide-out {
+    animation: slideDown 0.5s forwards;
+  }
+  
+  /* Slide-in for the image */
+  .animate-slide-up {
+    animation: slideUp 0.5s forwards;
+  }
+  
+  /* Slide-out for the image */
+  .animate-slide-down {
+    animation: slideDown 0.5s forwards;
+  }
+  
