@@ -1,5 +1,4 @@
-import { useEffect } from 'react';
-import React,{useState} from 'react';
+import React,{useState,useEffect,useRef} from 'react';
 import './animations.css';
 
 const products = [
@@ -18,63 +17,11 @@ const products = [
     // Add more products here...
   ];
 
-// const HeroSection = () => {
-//     const [currentProductIndex, setCurrentProductIndex] = useState(0);
-//     const [isAnimating, setIsAnimating] = useState(false);
-
-//     const nextProduct = () => {
-//         setIsAnimating(true); // Start animation
-//         setTimeout(() => {
-//           setIsAnimating(false); // Reset animation after transition
-//           setCurrentProductIndex((prevIndex) =>
-//             prevIndex === products.length - 1 ? 0 : prevIndex + 1
-//           );
-//         }, 500); // Duration of the animation (0.5 second)
-//       };
-    
-//       useEffect(() => {
-//         // Cycle through products every 3 seconds
-//         const interval = setInterval(nextProduct, 3000);
-//         return () => clearInterval(interval);
-//       }, []);
-    
-//       const currentProduct = products[currentProductIndex];
-
-//   return (
-//     <div className="text-white flex justify-center items-center mt-8">
-//       {/* Text Section */}
-//       <div className="w-1/2 text-center flex flex-col items-center ml-24">
-//         <h1 className="text-8xl sm:text-6xl font-bold ">
-//           Transforming ideas into
-//           <span> autonomous</span>
-//         </h1>
-//         <h1 className={`text-2xl sm:text-6xl font-bold mb-12 mt-4 transition-opacity duration-500 ${isAnimating ? 'opacity-0' : 'opacity-100'}`}>
-//           <span className="text-yellow-400">{currentProduct.name}.</span>
-//         </h1>
-//         <p className="text-lg sm:text-xl text-gray-300 mb-8">
-//           We make <span className="text-yellow-400">software for autonomous robots.</span><br />
-//           Build your robots better, faster, and cheaper!
-//         </p>
-//         {/* Button */}
-//         <button className='px-6 py-2 border text-white border-white rounded-full hover:bg-white hover:text-slate-700 transition duration-500'>Get In Touch &rarr;</button>
-//       </div>
-//       {/* Image Section */}
-//       <div className="w-1/2 mt-12">
-//       <img 
-//         src={currentProduct.image}  
-//         alt={currentProduct.name} 
-//         className={`w-full max-w-md transition-transform duration-1000 ${isAnimating ? 'animate-slide-up' : 'animate-slide-down'}`}/>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default HeroSection;
-
-
 const HeroSection = () => {
     const [currentProductIndex, setCurrentProductIndex] = useState(0);
     const [isAnimating, setIsAnimating] = useState(false);
+
+    const heroRef = useRef();
   
     // Function to transition to the next product
     const nextProduct = () => {
@@ -95,7 +42,7 @@ const HeroSection = () => {
     const currentProduct = products[currentProductIndex];
   
     return (
-      <div className="text-white flex justify-center items-center mt-8">
+      <div ref={heroRef} className="text-white flex justify-center items-center mt-8">
         {/* Left Section (Text) */}
         <div className="w-1/2 text-center flex flex-col items-center ml-24">
           <h1 className="text-4xl sm:text-6xl font-bold">

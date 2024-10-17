@@ -80,19 +80,3 @@ export default function App() {
     </div>
   );
 }
-
-
-
-
-
-// function App() {
-  
-//   return (
-//     <>
-//       <Navbar/>
-//       <HeroSection/>
-//     </>
-//   )
-// }
-
-// export default App
