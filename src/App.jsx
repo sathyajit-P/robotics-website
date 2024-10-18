@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Services from './components/Services';
 import Team from './components/Team';
 import Projects from './components/Projects';
+import ServicesSection from './components/ServicesSection';
 
 
 const router = createBrowserRouter([
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
       <>
         <Navbar />
         <HeroSection/>
+        <ServicesSection/>
       </>
     ),
   },

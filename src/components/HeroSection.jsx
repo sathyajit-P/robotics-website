@@ -42,7 +42,7 @@ const HeroSection = () => {
     const currentProduct = products[currentProductIndex];
   
     return (
-      <div ref={heroRef} className="text-white flex justify-center items-center mt-8">
+      <div ref={heroRef} className="min-h-screen text-white flex justify-center items-center mt-8">
         {/* Left Section (Text) */}
         <div className="w-1/2 text-center flex flex-col items-center ml-24">
           <h1 className="text-4xl sm:text-6xl font-bold">
