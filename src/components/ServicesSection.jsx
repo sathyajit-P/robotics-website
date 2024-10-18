@@ -22,8 +22,8 @@ const services = [
 const ServicesSection = () => {
   return (
     <>
-      <h2 className="text-white text-4xl font-bold text-center mb-20">Services That Go the Extra Mile</h2>
-      <div className="min-h-40 grid grid-cols-1 md:grid-cols-3 justify-items-center mx-6 mt-8 px-4 md:px-0">
+      <h2 className="text-white text-4xl font-bold text-center mb-32">Services That Go the Extra Mile</h2>
+      <div className="min-h-40 grid grid-cols-1 md:grid-cols-3 justify-items-center mx-6 mt-8 px-4 md:px-0 mb-16">
         {services.map((service, index) => (
           <Link to='/services' key={index} className='no-underline'>
             <div

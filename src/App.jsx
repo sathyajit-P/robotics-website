@@ -8,6 +8,9 @@ import Services from './components/Services';
 import Team from './components/Team';
 import Projects from './components/Projects';
 import ServicesSection from './components/ServicesSection';
+import Clients from './components/clients';
+import Globalreach from './components/globalreach';
+import FAQ from './components/FAQ';
 
 
 const router = createBrowserRouter([
@@ -22,6 +25,9 @@ const router = createBrowserRouter([
         <Navbar />
         <HeroSection/>
         <ServicesSection/>
+        <Clients/>
+        <Globalreach/>
+        <FAQ/>
       </>
     ),
   },
