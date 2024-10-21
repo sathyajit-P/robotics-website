@@ -1,19 +1,5 @@
 import React from 'react'
-
-const sales = [
-    {
-      amount: "1000+",
-      testimonial: `autonomous robots around the world use our software`
-    },
-    {
-      amount: "50000+",
-      testimonial: `man-hours of engineering expertise delivered`
-    },
-    {
-      amount: "$50 million+",
-      testimonial: `funding raised by startups while working with us`
-    }
-  ];
+import { sales } from '../constants'
 
 const Globalreach = () => {
   return (

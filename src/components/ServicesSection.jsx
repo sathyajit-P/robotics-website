@@ -1,23 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-const services = [
-  {
-    title: "Zero-to-One Robot Innovation",
-    image: "https://cdn.prod.website-files.com/666d72683a4b91a97f66baa2/6680398365848048a83918a7_special.svg", // Replace with the icon image or component
-    description: "Innovative solutions for building robots from scratch."
-  },
-  {
-    title: "Hyper-Realistic Robot Simulation",
-    image: "https://cdn.prod.website-files.com/666d72683a4b91a97f66baa2/6680389effe1c1500fa33e3d_simu.svg", // Replace with the icon image or component
-    description: "Advanced simulations for realistic robot behavior."
-  },
-  {
-    title: "Specialized Robotics Solutions",
-    image: "https://cdn.prod.website-files.com/666d72683a4b91a97f66baa2/668039d86ba918352b55ef58_robot%20arm.svg", // Replace with the icon image or component
-    description: "Custom robotics solutions tailored for various industries."
-  }
-];
+import { services } from '../constants';
 
 const ServicesSection = () => {
   return (

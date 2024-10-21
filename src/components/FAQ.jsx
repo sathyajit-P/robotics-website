@@ -1,23 +1,5 @@
 import React, { useState } from 'react';
-
-const accordionData = [
-  {
-    question: "Do you only work with ROS/ROS2, or can you handle other frameworks?",
-    description: "While ROS (Robot Operating System) and ROS2 are our bread and butter and are widely used in the robotics community, we're not limited to these frameworks. Our approach is fundamentally technology-agnostic, allowing us to adapt to the specific needs of each project."
-  },
-  {
-    question: "What types of robots have you worked with, and can you handle unique or specialized robotic systems?",
-    description: "Yes, we specialize in tailoring robotics solutions to fit unique industry needs. Whether it's manufacturing, healthcare, or logistics, we have the expertise to deliver highly customized and functional robots."
-  },
-  {
-    question: "What is your experience with hybrid robotic systems?",
-    description: "We have considerable experience with hybrid systems that involve both hardware and software integration. We excel at blending ROS components with other technologies to achieve superior performance and flexibility."
-  },
-  {
-    question: "Do you offer post-development support for the robotics systems?",
-    description: "Absolutely. Our services extend beyond development, offering post-deployment support, maintenance, and updates to ensure the long-term success of your robotics solutions."
-  }
-];
+import { accordionData } from '../constants';
 
 const FAQ = () => {
     const [activeIndices, setActiveIndices] = useState([]); // this will store the indices of the sections which are active

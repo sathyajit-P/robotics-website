@@ -1,21 +1,6 @@
 import React,{useState,useEffect,useRef} from 'react';
 import './animations.css';
-
-const products = [
-    {
-      name: "delivery robots",
-      image: "https://cdn.prod.website-files.com/666d72683a4b91a97f66baa2/66979afdbcb5b0b65f0bf14e_Untitled%20design%20(1).png",
-    },
-    {
-      name: "floor cleaners",
-      image: "https://cdn.prod.website-files.com/666d72683a4b91a97f66baa2/66979afd5dc0aa855606bb83_Untitled%20design%20(3).png",
-    },
-    {
-      name: "robotic arms",
-      image: "https://cdn.prod.website-files.com/666d72683a4b91a97f66baa2/66979afda50c6b926e13bf58_Untitled%20design.png",
-    },
-    // Add more products here...
-  ];
+import { products } from '../constants';
 
 const HeroSection = () => {
     const [currentProductIndex, setCurrentProductIndex] = useState(0);
