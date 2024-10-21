@@ -1,5 +1,5 @@
 import React from 'react';
-import { client } from '../constants';
+import { client } from '../../constants';
 
 const Clients = () => {
   return (

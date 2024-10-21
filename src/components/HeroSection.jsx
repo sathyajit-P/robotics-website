@@ -1,6 +1,6 @@
 import React,{useState,useEffect,useRef} from 'react';
 import './animations.css';
-import { products } from '../constants';
+import { products } from '../../constants';
 
 const HeroSection = () => {
     const [currentProductIndex, setCurrentProductIndex] = useState(0);

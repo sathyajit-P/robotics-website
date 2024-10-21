@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { accordionData } from '../constants';
+import { accordionData } from '../../constants';
 
 const FAQ = () => {
     const [activeIndices, setActiveIndices] = useState([]); // this will store the indices of the sections which are active

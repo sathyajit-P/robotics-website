@@ -1,5 +1,5 @@
 import React from 'react'
-import { sales } from '../constants'
+import { sales } from '../../constants'
 
 const Globalreach = () => {
   return (
