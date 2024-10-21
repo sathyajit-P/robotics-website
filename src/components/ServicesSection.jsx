@@ -10,7 +10,7 @@ const ServicesSection = () => {
         {services.map((service, index) => (
           <Link to='/services' key={index} className='no-underline'>
             <div
-              className="max-w-sm rounded overflow-hidden shadow-lg border border-[#ffffff1a] bg-gradient-to-r from-[#060606] to-[#0e0e0e] mb-6">
+              className="max-w-sm rounded overflow-hidden shadow-lg border border-[#ffffff1a] bg-gradient-to-r from-[#060606] to-[#0e0e0e] hover:bg-gradient-to-r hover:from-gray-700 hover:to-gray-800 mb-6">
               {/* {console.log(service.image)} */}
               <img src={service.image} alt={service.title} className='w-[80px] h-[100px] ml-4 overflow-auto mb-10' />
               <div className="px-6 py-4">
