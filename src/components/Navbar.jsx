@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <nav className='h-24 flex m-6'>
+    <nav className='h-20 flex m-6'>
         <img src="https://cdn.prod.website-files.com/666d72683a4b91a97f66baa2/666d9547d0a2e3aee50ebb5f_5eba355ac3a6603c1730472c_nav%20bar%20BCR%20Logo-p-500.png" loading="eager" alt="Brand Logo" className="logo mr-40 cursor-pointer" href="#"></img>
         <ul className='flex'>
             <li className='px-5 self-center text-slate-500 hover:text-white transition duration-100'><Link to="/home">Home</Link></li>

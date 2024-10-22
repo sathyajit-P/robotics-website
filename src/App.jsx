@@ -2,11 +2,11 @@ import { createBrowserRouter, RouterProvider,Navigate } from 'react-router-dom';
 import './App.css'
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
-import Blog from './components/Blog';
-import Contact from './components/Contact';
-import Services from './components/Services';
-import Team from './components/Team';
-import Projects from './components/Projects';
+import Blog from './pages/Blog';
+import Contact from './pages/Contact';
+import Services from './pages/Services';
+import Team from './pages/Team';
+import Projects from './pages/Projects';
 import ServicesSection from './components/ServicesSection';
 import Clients from './components/clients';
 import Globalreach from './components/globalreach';

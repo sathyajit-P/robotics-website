@@ -27,12 +27,11 @@ const HeroSection = () => {
     const currentProduct = products[currentProductIndex];
   
     return (
-      <div ref={heroRef} className="min-h-screen text-white flex justify-center items-center mt-8">
+      <div ref={heroRef} className="min-h-screen text-white flex justify-center items-center">
         {/* Left Section (Text) */}
         <div className="w-1/2 text-center flex flex-col items-center ml-24">
           <h1 className="text-4xl sm:text-6xl font-bold">
-            Transforming ideas into
-            <span>autonomous</span>
+            Transforming ideas into <span>autonomous</span>
           </h1>
           <h1
             className={`text-2xl sm:text-6xl font-bold mb-12 mt-4 transform transition-all duration-500 ${
